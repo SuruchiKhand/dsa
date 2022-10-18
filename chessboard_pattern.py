@@ -1,5 +1,5 @@
 def chessboard(inputNum: int):
-    chessboard = [[0 for i in range(inputNum)] for y in range(inputNum)]
+    chessboard = [[0 for i in range(inputNum)] for y in range(inputNum)] # using list comprehension to get 2D array
     print("chessboard", chessboard)
 
     for i in range(inputNum):
@@ -14,7 +14,7 @@ def chessboard(inputNum: int):
                     chessboard[i][j] = "B"
                 else:
                     chessboard[i][j] = "W"
-    print(chessboard)
+   
     chessboard_str = ""
     for rows in chessboard:
         for columns in rows:
